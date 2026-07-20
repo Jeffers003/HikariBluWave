@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #010308;
+  color: #fff;
+}
+
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    outline: none;
+  }
+
+  .all-unset {
+    all: unset;
+  }
+}
