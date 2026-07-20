@@ -1,73 +1,82 @@
-# React + TypeScript + Vite
+# 🌊 HikariBluWave
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma plataforma de e-commerce moderna desenvolvida com **React**, **Vite** e **TypeScript**, focada em desempenho, design responsivo e uma experiência de compra intuitiva.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🛍️ Catálogo de produtos
+- 🔍 Busca de produtos
+- 📂 Categorias
+- ❤️ Lista de favoritos
+- 🛒 Carrinho de compras
+- 👤 Autenticação de usuários
+- 📱 Interface totalmente responsiva
+- ⚡ Alto desempenho com Vite
 
-## React Compiler
+## 🛠️ Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- Chakra UI
+- React Router
+- ESLint
 
-## Expanding the ESLint configuration
+## 📁 Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+├── assets/
+├── components/
+├── pages/
+├── routes/
+├── services/
+├── styles/
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Como executar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Clone o repositório
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/seu-usuario/HikariBluWave.git
 ```
+
+### Entre na pasta
+
+```bash
+cd HikariBluWave
+```
+
+### Instale as dependências
+
+```bash
+npm install
+```
+
+### Execute o projeto
+
+```bash
+npm run dev
+```
+
+O projeto estará disponível em:
+
+```text
+http://localhost:5173
+```
+
+## 📸 Preview
+
+> Em breve...
+
+## 🎯 Objetivos
+
+Este projeto foi criado para estudar e aplicar boas práticas de desenvolvimento Front-end, arquitetura de componentes, responsividade e performance utilizando tecnologias modernas do ecossistema React.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
