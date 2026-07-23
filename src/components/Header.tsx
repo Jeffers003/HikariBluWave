@@ -1,16 +1,20 @@
+import searchIcon from "../assets/icons/icon-search.png";
+import profileIcon from "../assets/icons/icon-people.png";
 import { Logo } from "./Logo";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
     <header>
+      <div>
+        <Logo />
+      </div>
+      {/* LOGO */}
       <nav>
-        <div>
-          <Logo />
-        </div>
         <ul>
           <li>
-            <a href="/home">INÍCIO</a>
+            <Link to="/">INÍCIO</Link>
           </li>
           <li>
             <a href="/categorias">CATEGORÍAS</a>
@@ -25,11 +29,23 @@ export function Header() {
             <a href="/contato">CONTATO</a>
           </li>
         </ul>
-        <div className="header-icons">
-          <img src="../assets/icons/icon-search.png" alt="search" />
-          <img src="../assets/icons/icon-people.png" alt="profile" />
-        </div>
-      </nav>
+      </nav>{" "}
+      {/* NAVBAR */}
+      <div className="header-icons">
+        <img
+          style={{ width: "1rem", height: "1rem" }}
+          src={searchIcon}
+          alt="search"
+        />
+        <Link to="/login">
+          <img
+            style={{ width: "1rem", height: "1rem" }}
+            src={profileIcon}
+            alt="profile"
+          />
+        </Link>
+      </div>{" "}
+      {/* HEADER ICONS */}
     </header>
   );
 }
